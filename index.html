@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Astro Weight Calculator</title>
+  </head>
+  <style type="text/css">
+		#list {
+			display: inline-flex;	
+			display: column;
+			letter-spacing: .25px;		
+		}
+		#header {
+			font-size: 50px;
+			font-weight: bold;
+		}
+		li {
+			font-weight: bold;
+			font-size: 20px;
+		}
+		p {
+			background-color: rgb(200, 200, 300);
+			font-size: 30px;
+      font-weight: bold;
+			border-radius: 25px;
+			padding: 10px;
+  
+		}
+		#weight, #select, #button {
+			border-radius: 10px;
+		}
+	</style>
+	<body>
+		<header id="header">Astro Weight Calculator</header>
+		<hr>
+		<ul id="list" style="list-style-type: none" >
+			<li>Your Weight</li>
+      <input id="user-weight" type="text" placeholder="Weight (lbs)"/>
+				<br>
+        <li><label>Select a Planet</label></li>
+        <select id="planets"></select>
+						</select>
+		</ul>
+    <button id="calculate-button" onClick="handleClickEvent()">Calculate</button>
+    <p id="output"></p>
+  </body>
+  <script src="main.js" charset="utf-8"></script>
+</html>
